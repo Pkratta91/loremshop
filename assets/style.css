@@ -1,0 +1,477 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+header{
+  width: 100%;
+  background-color: #c7010e;
+  text-align: center;
+  padding: 0.5em 0 0 0;
+}
+
+header .headernavContainer{
+  width: 50%;
+  display: inline-block;
+}
+
+header .headernavContainer ul{
+}
+
+header .headernavContainer li{
+  list-style: none;
+  float: left;
+  border-right: 0.1em solid;
+  padding: 0 0.5em;
+
+}
+
+header .headernavContainer a{
+  color: #fff;
+  text-decoration: none;
+}
+
+header .headernavContainer .flagContainer{
+  border-right: none;
+
+}
+
+header .headernavContainer .basketContainer{
+  float: right;
+  border-right: none;
+  padding: 0;
+}
+
+header .logoContainer{
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  padding: 0.5em 0 0 0;
+}
+
+header .logoContainer i{
+  float: left;
+  color: #ffe800;
+  font-size: 3em;
+  line-height: 65px;
+}
+
+header .logoContainer h1{
+  color: #fff;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+header .logoContainer span{
+  float: left;
+  color: #000;
+}
+
+header .logoContainer h2{
+  color: #fff;
+  line-height: 15px;
+  text-transform: uppercase;
+  word-spacing:-3px;
+
+}
+
+header .logoContainer form{
+  width: 40%;
+  float: right;
+  padding: 1em 0;
+}
+
+header .logoContainer form input[type=text] {
+  width: 10em;
+  display:block;
+  margin: 0 0 0 auto;
+  box-sizing: border-box;
+  border: none;
+  font-size: 1em;
+  text-align: left;
+  background-color: white;  padding: 0.5em;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+header .logoContainer form input[type=text]:focus {
+  width: 100%;
+}
+
+header .middlenavContainer{
+  background-color: #000;
+  font-size: 1em;
+  padding: 0.5em 0;
+}
+
+header .middlenavContainer ul{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header .middlenavContainer li{
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: none;
+  float: left;
+  padding: 0 1.5em;
+}
+
+header .middlenavContainer a{
+  color: #fff;
+  text-decoration: none;
+}
+
+header .bottomnavContainer{
+  background-color: #fff;
+  padding: 0.5em 0;
+}
+
+header .bottomnavContainer ul{
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header .bottomnavContainer li{
+  font-weight: bold;
+  list-style: none;
+  float: left;
+  text-transform: uppercase;
+  padding: 0 5em;
+}
+
+header .bottomnavContainer .border{
+  border-left: 0.1em solid #000;
+  border-right: 0.1em solid #000;
+}
+
+header .bottomnavContainer a{
+  color: #000;
+  text-decoration: none;
+}
+
+main .carouselContainer{
+  position: relative;
+}
+
+main .carouselContainer .mySlides{
+  /* display: none; */
+}
+
+main .carouselContainer .redContainer{
+  width: 100%;
+  height: 60vh;
+  background-color: #c7010e;
+}
+
+main .carouselContainer .greenContainer{
+  width: 100%;
+  height: 60vh;
+  background-color: #00c10b;
+}
+
+main .carouselContainer .blueContainer{
+  width: 100%;
+  height: 60vh;
+  background-color: #0087c1;
+}
+
+main .carouselContainer .yellowContainer{
+  width: 100%;
+  height: 60vh;
+  background-color: #e2ea15;
+}
+
+main .carouselContainer .prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-weight: bold;
+  font-size: 3em;
+  /* transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+main .carouselContainer .prev{
+  left: 10%;
+}
+
+main .carouselContainer .next{
+  right: 10%;
+}
+
+main .carouselContainer .prev:hover{
+  background-color: #fff;
+  color: #c7010e;
+}
+
+main .carouselContainer .next:hover{
+  right: 10%;
+}
+
+main .buttonContainer{
+  width: 50%;
+  /* border-bottom: 0.1em solid #888; */
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+main .buttonContainer .tabLink{
+  background-color: #e9e9eb;
+  color: #333;
+  font-weight: bolder;
+  padding: 0.5em 1em;
+  border: none;
+  text-transform: uppercase;
+}
+
+main .buttonContainer .tabLink.active{
+  background-color: #c7010e;
+  color: #fff;
+}
+
+main .buttonContainer .tabLink:focus{
+  outline: 0;
+}
+
+main .tabContent{
+  width: 50%;
+  margin: 0 auto;
+  padding: 1em 0 2em 0;
+  display: flex;
+  animation: fadeEffect 1s;
+}
+/* 
+main .tabContent .jerseyOne{
+  height: 30em;
+}
+
+main .tabContent .jerseyTwo{
+  height: 30em;
+}
+
+main .tabContent .jerseyThree{
+  height: 30em;
+}
+
+main .tabContent .jerseyFour{
+  height: 30em;
+}
+
+main .tabContent .jerseyFive{
+  height: 30em;
+}
+
+main .tabContent .jerseySix{
+  height: 30em;
+}
+
+main .tabContent .jerseySeven{
+  height: 30em;
+}
+
+main .tabContent .jerseyEight{
+  height: 30em;
+} */
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+main #Jerseys{
+  display: none;
+}
+
+main #Brands{
+  /* display: none; */
+}
+
+
+main .automaticslideContainer{
+  padding: 0 0 1em 0;
+}
+
+main .automaticslideContainer .automaticSlide{
+  width: 50%;
+  margin: 0 auto;
+}
+
+main .automaticslideContainer .automaticSlide .slideOne{
+  width: 100%;
+  background-color: #c7010e;
+  height: 40vh;
+}
+
+main .automaticslideContainer .automaticSlide .slideTwo{
+  width: 100%;
+  background-color: #11c701;
+  height: 40vh;
+}
+
+main .automaticslideContainer .automaticSlide .slideThree{
+  width: 100%;
+  background-color: #015dc7;
+  height: 40vh;
+}
+
+/* The dots/bullets/indicators */
+main .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  display: none;
+}
+
+.activeBackground {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+footer{
+  width: 100%;
+}
+
+footer .subscriptionFooter{
+  width: 100%;
+  background-color: #c7010e;
+  padding: 1em 0;
+}
+
+footer .subscriptionFooter .subscriptionContainer{
+  width: 100%;
+  background-color: #c7010e;
+  text-align: center;
+}
+
+footer .subscriptionFooter .subscriptionContainer h4{
+  width: 5em;
+  display: inline-block;
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+  border-right: 0.1em solid #fff;
+  padding: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+footer .subscriptionFooter .subscriptionContainer p{
+  width: 20em;
+  display: inline-block;
+  text-align: left;
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  vertical-align: middle;
+}
+
+footer .subscriptionFooter .subscriptionContainer form{
+  width: 30%;
+  display: inline-block;
+  text-align: left;
+}
+
+footer .subscriptionFooter .subscriptionContainer form .inputContainer{
+  width: 70%;
+  border: none;
+  padding: 0.5em;
+  display: inline-block;
+}
+
+footer .subscriptionFooter .subscriptionContainer form .submitButton{
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5em;
+  display: inline-block;
+}
+
+footer .policyContainer{
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+}
+
+footer .policyContainer h2{
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 1em 0;
+  border-bottom: 0.1em solid;
+}
+
+footer .policyContainer ul{
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 2em 0.6em;
+}
+
+footer .policyContainer .paymentContent{
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+
+}
+
+footer .policyContainer li{
+  font-size: 0.8em;
+  list-style: none;
+  font-weight: normal;
+  text-align: center;
+  text-transform: none;
+  padding: 0.5em 0;
+}
+
+footer .policyContainer li i{
+  display: inline-block;
+  padding: 0 0.5em;
+}
+
+footer .copyrightContainer{
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+
+footer .copyrightContainer h5{
+  width: 50%;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+
+}

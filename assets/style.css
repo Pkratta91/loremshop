@@ -224,7 +224,7 @@ main .buttonContainer{
   /* border-bottom: 0.1em solid #888; */
   text-align: center;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 3em 0 1em 0;
 }
 
 main .buttonContainer .tabLink{
@@ -246,13 +246,13 @@ main .buttonContainer .tabLink:focus{
 }
 
 main .tabContent{
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   padding: 1em 0 2em 0;
   display: flex;
   animation: fadeEffect 1s;
 }
-/* 
+/*
 main .tabContent .jerseyOne{
   height: 30em;
 }

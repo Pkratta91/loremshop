@@ -88,7 +88,7 @@ $('.tabContent').slick({
   centerMode: true,
   slidesToShow: 4,
   centerPadding: '40px',
-  variableWidth: false,
+  variableWidth: true,
   responsive: [
     {
       breakpoint: 980,
@@ -99,22 +99,22 @@ $('.tabContent').slick({
         slidesToShow: 3
       }
     },
-    {
-      breakpoint: 737,
-      settings: {
-        arrows: true,
-        centerMode: false,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 635,
-      settings: {
-        arrows: false,
-        centerMode: false,
-        slidesToShow: 1
-      }
-    }
+    // {
+    //   breakpoint: 737,
+    //   settings: {
+    //     arrows: true,
+    //     centerMode: false,
+    //     centerPadding: '40px',
+    //     slidesToShow: 3
+    //   }
+    // },
+    // {
+    //   breakpoint: 635,
+    //   settings: {
+    //     arrows: false,
+    //     centerMode: false,
+    //     slidesToShow: 1
+    //   }
+    // }
   ]
 });

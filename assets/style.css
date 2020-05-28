@@ -45,7 +45,7 @@ header .headernavContainer .flagContainer{
 header .headernavContainer .basketContainer{
   float: right;
   border-right: none;
-  padding: 0;
+  padding: 0 0.5em;
 }
 
 header .logoContainer{
@@ -87,32 +87,51 @@ header .logoContainer form{
   padding: 1em 0;
 }
 
+header .logoContainer form i{
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5em;
+  float: right;
+  line-height: 35px;
+  padding: 0 0.2em;
+}
+
+header .logoContainer form input{
+}
+
 header .logoContainer form input[type=text] {
-  width: 10em;
+  width: 8em;
   display:block;
   margin: 0 0 0 auto;
   box-sizing: border-box;
   border: none;
   font-size: 1em;
   text-align: left;
-  background-color: white;  padding: 0.5em;
+  float: right;
+  background-color: white;
+  padding: 0.5em;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
 header .logoContainer form input[type=text]:focus {
-  width: 100%;
+  width: 80%;
+  outline: none;
 }
 
 header .middlenavContainer{
   background-color: #000;
-  font-size: 1em;
+  font-size: 0.9em;
   padding: 0.5em 0;
+  display: flex;
 }
 
 header .middlenavContainer ul{
+  width: 57em;
   display: inline-block;
   vertical-align: middle;
+  float: left;
+  margin: auto;
 }
 
 header .middlenavContainer li{
@@ -120,7 +139,7 @@ header .middlenavContainer li{
   text-transform: uppercase;
   list-style: none;
   float: left;
-  padding: 0 1.5em;
+  padding: 0 1.4em;
 }
 
 header .middlenavContainer a{
@@ -165,28 +184,13 @@ main .carouselContainer .mySlides{
   /* display: none; */
 }
 
-main .carouselContainer .redContainer{
-  width: 100%;
-  height: 60vh;
-  background-color: #c7010e;
+main .carouselContainer .carouselContent{
+  text-align: center;
 }
 
-main .carouselContainer .greenContainer{
-  width: 100%;
-  height: 60vh;
-  background-color: #00c10b;
-}
-
-main .carouselContainer .blueContainer{
-  width: 100%;
-  height: 60vh;
-  background-color: #0087c1;
-}
-
-main .carouselContainer .yellowContainer{
-  width: 100%;
-  height: 60vh;
-  background-color: #e2ea15;
+main .carouselContainer .carouselContent img{
+  width: 60%;
+  height: auto;
 }
 
 main .carouselContainer .prev, .next{
@@ -216,7 +220,8 @@ main .carouselContainer .prev:hover{
 }
 
 main .carouselContainer .next:hover{
-  right: 10%;
+  background-color: #fff;
+  color: #c7010e;
 }
 
 main .buttonContainer{
@@ -252,38 +257,6 @@ main .tabContent{
   display: flex;
   animation: fadeEffect 1s;
 }
-/*
-main .tabContent .jerseyOne{
-  height: 30em;
-}
-
-main .tabContent .jerseyTwo{
-  height: 30em;
-}
-
-main .tabContent .jerseyThree{
-  height: 30em;
-}
-
-main .tabContent .jerseyFour{
-  height: 30em;
-}
-
-main .tabContent .jerseyFive{
-  height: 30em;
-}
-
-main .tabContent .jerseySix{
-  height: 30em;
-}
-
-main .tabContent .jerseySeven{
-  height: 30em;
-}
-
-main .tabContent .jerseyEight{
-  height: 30em;
-} */
 
 @keyframes fadeEffect {
   from {opacity: 0;}
@@ -300,30 +273,21 @@ main #Brands{
 
 
 main .automaticslideContainer{
-  padding: 0 0 1em 0;
+  padding: 0 0 2em 0;
 }
 
 main .automaticslideContainer .automaticSlide{
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
-main .automaticslideContainer .automaticSlide .slideOne{
-  width: 100%;
-  background-color: #c7010e;
-  height: 40vh;
+main .automaticslideContainer .automaticSlide .automaticslideContent{
+  text-align: center;
 }
 
-main .automaticslideContainer .automaticSlide .slideTwo{
+main .automaticslideContainer .automaticSlide .automaticslideContent img{
   width: 100%;
-  background-color: #11c701;
-  height: 40vh;
-}
-
-main .automaticslideContainer .automaticSlide .slideThree{
-  width: 100%;
-  background-color: #015dc7;
-  height: 40vh;
+  height: auto;
 }
 
 /* The dots/bullets/indicators */
@@ -371,20 +335,18 @@ footer .subscriptionFooter{
 }
 
 footer .subscriptionFooter .subscriptionContainer{
-  width: 100%;
+  width: 60%;
   background-color: #c7010e;
-  text-align: center;
+  display: flex;
+  margin: auto;
 }
 
 footer .subscriptionFooter .subscriptionContainer h4{
   width: 5em;
-  display: inline-block;
   color: #fff;
-  text-align: left;
   text-transform: uppercase;
   border-right: 0.1em solid #fff;
-  padding: 0 0.5em 0 0;
-  vertical-align: middle;
+  float: left;
 }
 
 footer .subscriptionFooter .subscriptionContainer p{
@@ -392,14 +354,16 @@ footer .subscriptionFooter .subscriptionContainer p{
   display: inline-block;
   text-align: left;
   font-size: 0.8em;
-  padding: 0 0.5em;
+  padding: 0.5em;
   vertical-align: middle;
 }
 
 footer .subscriptionFooter .subscriptionContainer form{
-  width: 30%;
+  width: 60%;
   display: inline-block;
-  text-align: left;
+  text-align: right;
+  line-height: 75px;
+  float: right;
 }
 
 footer .subscriptionFooter .subscriptionContainer form .inputContainer{
@@ -409,12 +373,20 @@ footer .subscriptionFooter .subscriptionContainer form .inputContainer{
   display: inline-block;
 }
 
+footer .subscriptionFooter .subscriptionContainer form .inputContainer:focus{
+  outline: none;
+}
+
 footer .subscriptionFooter .subscriptionContainer form .submitButton{
   background-color: #000;
   color: #fff;
   border: none;
   padding: 0.5em;
   display: inline-block;
+}
+
+footer .subscriptionFooter .subscriptionContainer form .submitButton:focus{
+  outline: none
 }
 
 footer .policyContainer{

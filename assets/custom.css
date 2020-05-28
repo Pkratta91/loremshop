@@ -15,180 +15,176 @@ https://gist.github.com/needim/d15fdc2ac133d8078f7c
   ##Screen = 1281px to higher resolution desktops
 */
 @media all and (max-width: 1280px) {
-
+  header .logoContainer form input[type=text]:focus {
+    width: 60%;
+  }
 }
 
 @media all and (max-width: 980px) {
-  header .headernavContainer{
-    width: 99%;
+  header .headernavContainer {
+      width: 100%;
   }
 
-  header .logoContainer{
-    width: 99%;
-
-  }
-  header .middlenavContainer{
-    font-size: 0.8em;
+  header .logoContainer {
+    width: 100%;
+    padding: 0.5em 0.5em 0 0.5em;
   }
 
-  header .middlenavContainer li{
-    padding: 0 2em;
-  }
-
-  header .bottomnavContainer{
-    font-size: 0.8em;
-  }
+  header .logoContainer form input[type=text] {
+    width: 8em;
 }
 
-@media all and (max-width: 845px) {
-  header .headernavContainer{
-    font-size: 0.8em;
-  }
-
-  header .middlenavContainer{
-    font-size: 0.6em;
-  }
-
-  header .middlenavContainer li{
-    padding: 0 2em;
-  }
-
-  header .bottomnavContainer {
-    font-size: 0.6em;
+header .middlenavContainer{
+  font-size: 0.8em;
 }
+
+header .bottomnavContainer li{
+  padding: 0 3em;
+}
+
+  footer .subscriptionFooter .subscriptionContainer p {
+    width: 35%;
+}
+
+  footer .subscriptionFooter .subscriptionContainer {
+    width: 36em;
+    margin: auto;
+  }
+
+  footer .subscriptionFooter .subscriptionContainer form
+  {
+    width: 49%;
+    text-align: right;
+  }
 }
 
 @media all and (max-width: 736px) {
-  main .carouselContainer .mySlides {
-    width: 50%;
-    margin: 0 auto;
-}
-}
+  header .middlenavContainer {
+    font-size: 0.7em;
+  }
 
-@media all and (max-width: 672px) {
-  main .buttonContainer .tabLink{
-    width: 40%;
+  header .bottomnavContainer li{
+    padding: 0 2em;
   }
 }
 
-@media all and (max-width: 635px) {
-  header .middlenavContainer li {
-    padding: 0 1.5em;
-}
-
-  main .buttonContainer .tabLink{
-    width: 10em;
+@media all and (max-width: 630px) {
+  header .middlenavContainer {
+    font-size: 0.6em;
   }
 
-  footer .subscriptionFooter .subscriptionContainer h4{
-    width: 12em;
-    margin: 0 auto;
-    display: block;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 0.1em solid #fff;
-    border-right: none;
-    padding: 0;
+  header .bottomnavContainer li{
+    font-size: 0.7em;
   }
 
-  footer .subscriptionFooter .subscriptionContainer p{
-    width: 20em;
-    display: block;
+  footer .subscriptionFooter .subscriptionContainer {
+    width: 100%;
     margin: auto;
-    text-align: left;
-    font-size: 0.8em;
-    padding: 1em 0;
-  }
-
-  footer .subscriptionFooter .subscriptionContainer form{
-    width: 50%;
-    display: block;
-    margin: auto;
-    text-align: center;
-  }
-
-  footer .policyContainer ul{
-    width: 50%;
-    padding: 1em 0.6em;
-  }
-
-  footer .policyContainer .socialContent ul{
-    width: 50%;
-    padding: 1em 0.6em;
-    display: inline;
-  }
-
-  footer .policyContainer .socialContent li{
-    width: 50%;
-    padding: 1em 0.6em;
-    display: inline;
-  }
-
-  footer .policyContainer li i{
-    padding: 2em 0;
   }
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 500px) {
+  header .logoContainer h1{
+    display: none;
+  }
+
+  header .logoContainer h2{
+    display: none;
+  }
+
   header .middlenavContainer{
     font-size: 0.5em;
   }
 
   header .bottomnavContainer{
-  font-size: 0.5em;
+    font-size: 0.7em;
   }
 
-  main .tabContent{
-    padding: 0 0 2em 0;
+  main .buttonContainer {
+    width: 60%;
+    /* border-bottom: 0.1em solid #888; */
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em 0 0 0;
   }
-}
 
-@media all and (max-width: 480px) {
-  header .logoContainer{
+  footer .subscriptionFooter .subscriptionContainer{
+    width: 100%;
     padding: 0 1em;
   }
 
-  header .logoContainer h1{
-    display: none;
-  }
-  header .logoContainer h2{
-    display: none;
+  footer .subscriptionFooter .subscriptionContainer form{
+    line-height: 100px;
   }
 
-  header .logoContainer form{
-    width: 70%;
+  footer .policyContainer ul{
+    width: 50%;
   }
 
-  header .logoContainer form input[type=text]{
-    width: 6em;
-  }
-
-  header .middlenavContainer{
-    font-size: 0.4em;
-  }
-
-  header .bottomnavContainer{
-    font-size: 0.4em;
-  }
-
-  main .carouselContainer .redContainer{
-    height: 40vh;
-  }
-
-  main .carouselContainer .greenContainer{
-    height: 40vh;
-  }
-
-  main .carouselContainer .blueContainer{
-    height: 40vh;
-  }
-
-  main .carouselContainer .yellowContainer{
-    height: 40vh;
+  footer .policyContainer ul {
+    padding: 1em 0.6em;
   }
 }
 
+@media all and (max-width: 415px){
+  header .headernavContainer {
+      font-size: 0.8em;
+  }
+
+  header .logoContainer form input[type=text] {
+    width: 5em;
+}
+
+  header .logoContainer form{
+      width: 70%;
+  }
+
+  header .middlenavContainer li {
+      padding: 0 1em;
+  }
+
+  main .carouselContainer .prev, .next {
+    font-size: 1em;
+}
+
+  footer .subscriptionFooter .subscriptionContainer {
+    display: inline-block;
+    text-align: center;
+  }
+
+  footer .subscriptionFooter .subscriptionContainer h4 {
+    width: 50%;
+    border-right: none;
+    border-bottom: 0.1em solid #fff;
+    margin: auto;
+    float: none;
+  }
+
+  footer .subscriptionFooter .subscriptionContainer p{
+    width:80%;
+    padding: 1em 0;
+  }
+
+  footer .subscriptionFooter .subscriptionContainer form{
+    width: 100%;
+    line-height: 0px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 415px){
+  header .middlenavContainer li {
+    padding: 0 0.7em;
+  }
+
+  footer .subscriptionFooter .subscriptionContainer h4{
+    width: 55%;
+  }
+
+  footer .copyrightContainer h5{
+    width: 100%;
+  }
+}
 /*
   ##Device = Laptops, Desktops
   ##Screen = 1025px to 1280px

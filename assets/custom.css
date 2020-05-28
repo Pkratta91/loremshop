@@ -173,8 +173,17 @@ header .bottomnavContainer li{
 }
 
 @media all and (max-width: 415px){
+  header .middlenavContainer {
+    text-align: center;
+  }
+
+  header .middlenavContainer ul{
+    width: 45em;
+    margin: auto;
+  }
+
   header .middlenavContainer li {
-    padding: 0 0.7em;
+    padding: 0 0.6em;
   }
 
   footer .subscriptionFooter .subscriptionContainer h4{

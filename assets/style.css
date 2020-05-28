@@ -335,7 +335,7 @@ footer .subscriptionFooter{
 }
 
 footer .subscriptionFooter .subscriptionContainer{
-  width: 60%;
+  width: 50%;
   background-color: #c7010e;
   display: flex;
   margin: auto;
